@@ -1,14 +1,25 @@
-import { Box, Button } from "@mui/material"
+import { Box} from "@mui/material"
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
-export const Card = () => {
+export const MyCard = () => {
 	return (
-		<Box>
-			<img src="https://place-hold.it/300" alt="" />
-			<h4>Card Tittle </h4>
-			<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio reprehenderit facilis unde odio soluta praesentium incidunt, 
-				consequatur qui. Rem explicabo quia, ex recusandae hic animi ullam fugiat rerum facilis dolorem.</p>
-			<button variant="contained" color= "primary">Find Out More!</button>
-		
+		<Box sx={{margin: "5px", }}>
+			
+			<Card style={{ width: '18rem', height: '25rem', padding: "10px" }}>
+				<Card.Img variant="top" src="https://picsum.photos/500/325" />
+				<Card.Body>
+					<Card.Title>Card Title</Card.Title>
+					<Card.Text>
+						Some quick example text to build on the card title and make up the
+						bulk of the card's content.
+					</Card.Text>
+					<Button variant="primary">Find Out More</Button>
+				</Card.Body>
+			</Card>
+
+
+
 		</Box>
 
 	);
